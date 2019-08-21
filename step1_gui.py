@@ -14,7 +14,7 @@ def Button(name, color, size=(7, 2), **kwargs):
 
 layout = [
     [sg.Text("PyDataMath-II", size=(50,1), font=('Franklin Gothic Book', 14, 'bold'), justification='right', background_color="#272533", text_color='white')],
-    [sg.Text("0.00", size=(18,1), font=('Digital-7',47), text_color='red', justification='right', background_color='black', relief='sunken', key='_DISPLAY_')],
+    [sg.Text("0.0000", size=(18,1), font=('Digital-7',47), text_color='red', justification='right', background_color='black', relief='sunken', key='_DISPLAY_')],
     [Button("C", bt), Button("CE", bt), Button("%", bt), Button("/", bt)],
     [Button("7", bw), Button("8", bw), Button("9", bw), Button("*", bt)],
     [Button("4", bw), Button("5", bw), Button("6", bw), Button("-", bt)],
