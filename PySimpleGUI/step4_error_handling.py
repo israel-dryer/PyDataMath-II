@@ -19,7 +19,7 @@ layout = [
     [Button("7", BW), Button("8", BW), Button("9", BW), Button("*", BT)],
     [Button("4", BW), Button("5", BW), Button("6", BW), Button("-", BT)],
     [Button("1", BW), Button("2", BW), Button("3", BW), Button("+", BT)],
-    [Button("0", BW, size=(11,2)), Button(".", BW), Button("=", BO, size=(11,2), focus=True)]
+    [Button("0", BW), Button(".", BW), Button("=", BO, size=(15,2), focus=True)]
 ]
 
 window = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660))
