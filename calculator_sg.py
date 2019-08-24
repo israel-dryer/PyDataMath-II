@@ -7,8 +7,7 @@ BT = ("black","#F1EABC") # black/tan
 BO = ("black","#ECA527") # black/orange
 
 def Button(name, color, size=(7, 2), **kwargs):
-    ''' return an sg button with default parameters along with any changes
-        passed as optional keyword arguments '''    
+    ''' return an sg button with default parameters '''    
     button = sg.Button(name, size=size, button_color=color, font=('Franklin Gothic Book', 24), **kwargs)
     return button
 

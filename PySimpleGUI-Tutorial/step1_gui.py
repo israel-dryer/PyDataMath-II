@@ -7,8 +7,7 @@ BT = ("black","#F1EABC") # black/tan
 BO = ("black","#ECA527") # black/orange
 
 def Button(name, color, size=(7, 2), **kwargs):
-    ''' return an sg button with default parameters along with any changes
-        passed as optional keyword arguments '''    
+    ''' return an sg button with default parameters '''    
     button = sg.Button(name, size=size, button_color=color, font=('Franklin Gothic Book', 24), **kwargs)
     return button
 
@@ -19,7 +18,12 @@ layout = [
     [Button("7", BW), Button("8", BW), Button("9", BW), Button("*", BT)],
     [Button("4", BW), Button("5", BW), Button("6", BW), Button("-", BT)],
     [Button("1", BW), Button("2", BW), Button("3", BW), Button("+", BT)],
-    [Button("0", BW, size=(11,2)), Button(".", BW), Button("=", BO, size=(11,2), focus=True)]
+    [Button("0", BW), Button(".", BW), Button("=", BO, size=(15,2), focus=True)]
 ]
 
-sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660)).read()
+window = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660))
+
+while True:
+    event, value = window.read()
+    if event is None:
+        break
