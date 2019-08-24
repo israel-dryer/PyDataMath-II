@@ -1,6 +1,8 @@
 # PyDataMath-II
 A simple Python calculator gui application based loosely on the [Texas Instruments DataMath II](https://americanhistory.si.edu/collections/search/object/nmah_1364035) produced circa 1975.
 
+If you're looking for some experience with a GUI, or you want to add a project to your Python portfolio, this is a great place to start.
+
 ## PySimpleGui Version
 The code includes 4 progressive steps used to build the application as part of a [YouTube]() tutorial. Step 4 is the finished product.
 
