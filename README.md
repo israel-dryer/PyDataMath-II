@@ -5,8 +5,10 @@ I'm using a [Digital-7 font](https://www.1001fonts.com/digital+clock-fonts.html)
 
 ## PySimpleGui Version
 Requirements: PySimpleGUI `pip install pysimplegui` or `conda install pysimplegui`
+
 ![](sg_example.PNG)
 
 ## Tkinter Version
 Tkinter should already be installed with your python distribution. But if not, you can install with `pip install tkinter`
+
 ![](tk_example.PNG)
