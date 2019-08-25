@@ -21,6 +21,50 @@ layout = [
 ]
 window = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660))
 
+''' calculator functions '''
+# global variables
+front = []
+back = []
+decimal = False
+operator = ''
+x_val = 0.0
+y_val = 0.0
+result = 0.0
+
+# helper functions
+def format_number():
+    ''' create a consolidated string of numbers from front and back lists '''
+    return ''.join(front) + '.' + ''.join(back)
+
+def update_display():
+    ''' update the calculator display after an event click '''
+    pass
+
+
+# click events
+def number_click():
+    ''' number or decimal button click event '''
+    pass
+
+def clear_click():
+    ''' ce or c button click event '''
+    pass
+
+def operator_click():
+    ''' + - / * % button click event '''
+    pass
+
+def calculate_click():
+    ''' equals button click event '''
+    pass
+
+
+
+
+
+
+
+
 while True:
     event, values = window.Read()
     if event is None:
