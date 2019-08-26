@@ -64,23 +64,16 @@ def operator_click(event):
     ''' + - / * button click event '''
     global operator, x_val
     operator = event
-    try:
-        x_val = format_number()
-    except:
-        x_val = result
+    x_val = format_number()
     clear_click()
 
 def calculate_click():
     ''' equals button click event '''
     global y_val, result 
     y_val = format_number()
-    try:
-        result = eval(str(x_val) + operator + str(y_val))
-        update_display(result)
-        clear_click()    
-    except:
-        update_display("ERROR! DIV/0")
-        clear_click()
+    result = eval(str(x_val) + operator + str(y_val))
+    update_display(result)
+    clear_click()
 
 while True:
     event, values = window.read()
