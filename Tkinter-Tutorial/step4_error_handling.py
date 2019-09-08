@@ -12,7 +12,7 @@ root.config(bg='#272533')
 display_text = tk.StringVar()
 display_text.set('0.0000')
 
-canvas = tk.Canvas(bg='#272533', bd=0, highlightthickness=0)
+canvas = tk.Canvas(root, bg='#272533', bd=0, highlightthickness=0)
 canvas.pack(padx=15, pady=15)
 
 def std_btn(text, bg, row, col, width=7, height=2, font=('Franklin Gothic Book', 24)):
