@@ -17,7 +17,7 @@ layout = [
 window = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660))
 
 while True:
-    event, values = window.Read()
+    event, values = window.read()
     if event is None:
         break
     else:
