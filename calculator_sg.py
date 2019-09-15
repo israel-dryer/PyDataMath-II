@@ -6,8 +6,10 @@ bt = {'size':(7,2), 'font':('Franklin Gothic Book', 24), 'button_color':("black"
 bo = {'size':(15,2), 'font':('Franklin Gothic Book', 24), 'button_color':("black","#ECA527"), 'focus':True}
 
 layout = [
-    [sg.Text('PyDataMath-II', size=(50,1), justification='right', background_color="#272533", text_color='white', font=('Franklin Gothic Book', 14, 'bold'))],
-    [sg.Text('0.0000', size=(18,1), justification='right', background_color='black', text_color='red', font=('Digital-7',48), relief='sunken', key="_DISPLAY_")],
+    [sg.Text('PyDataMath-II', size=(50,1), justification='right', background_color="#272533", 
+        text_color='white', font=('Franklin Gothic Book', 14, 'bold'))],
+    [sg.Text('0.0000', size=(18,1), justification='right', background_color='black', text_color='red', 
+        font=('Digital-7',48), relief='sunken', key="_DISPLAY_")],
     [sg.Button('C',**bt), sg.Button('CE',**bt), sg.Button('%',**bt), sg.Button("/",**bt)],
     [sg.Button('7',**bw), sg.Button('8',**bw), sg.Button('9',**bw), sg.Button("*",**bt)],
     [sg.Button('4',**bw), sg.Button('5',**bw), sg.Button('6',**bw), sg.Button("-",**bt)],
