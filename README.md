@@ -8,7 +8,7 @@ Requirements: PySimpleGUI `pip install pysimplegui` or `conda install pysimplegu
 
 ![](sg_example.PNG)
 
-## Tkinter Version
+## Tkinter Version (in progress)
 Tkinter should already be installed with your python distribution. But if not, you can install with `pip install tkinter`
 
 ![](tk_example.PNG)
