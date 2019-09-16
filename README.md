@@ -7,9 +7,12 @@ I'm using a [Digital-7 font](https://www.1001fonts.com/digital+clock-fonts.html)
 Requirements: PySimpleGUI `pip install pysimplegui` or `conda install pysimplegui`  
 - Watch the [YouTube tutorial](https://youtu.be/x5LSTDdffFk)  
 - Get the [code](calculator_sg.py)  
+
 ![](sg_example.PNG)
 
 ## Tkinter Version
 Tkinter should already be installed with your python distribution. But if not, you can install with `pip install tkinter`
+- Watch the [YouTube tutorial]() <-- coming soon
+- Get the [code](calculator_tk.py)  
 
 ![](tk_example.PNG)
