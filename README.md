@@ -5,7 +5,8 @@ I'm using a [Digital-7 font](https://www.1001fonts.com/digital+clock-fonts.html)
 
 ## PySimpleGui Version
 Requirements: PySimpleGUI `pip install pysimplegui` or `conda install pysimplegui`  
-Watch the YouTube tutorial [here](https://youtu.be/x5LSTDdffFk)  
+- Watch the [YouTube tutorial](https://youtu.be/x5LSTDdffFk)  
+- Get the [code](calculator_sg.py)  
 ![](sg_example.PNG)
 
 ## Tkinter Version
