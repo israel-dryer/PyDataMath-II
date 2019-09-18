@@ -74,11 +74,12 @@ def calculate_click():
 
 while True:
     event, values = window.read()
+    print(event)
     if event is None:
         break
     if event in ['0','1','2','3','4','5','6','7','8','9']:
         number_click(event)
-    if event in ['C','CE']:
+    if event in ['Escape:27','C','CE']: # 'Escape:27 for keyboard control
         clear_click()
         update_display(0.0)
         var['result'] = 0.0
