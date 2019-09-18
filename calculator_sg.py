@@ -14,9 +14,9 @@ layout = [
     [sg.Button('7',**bw), sg.Button('8',**bw), sg.Button('9',**bw), sg.Button("*",**bt)],
     [sg.Button('4',**bw), sg.Button('5',**bw), sg.Button('6',**bw), sg.Button("-",**bt)],
     [sg.Button('1',**bw), sg.Button('2',**bw), sg.Button('3',**bw), sg.Button("+",**bt)],    
-    [sg.Button('0',**bw), sg.Button('.',**bw), sg.Button('=',**bo)],
+    [sg.Button('0',**bw), sg.Button('.',**bw), sg.Button('=',**bo, bind_return_key=True)],
 ]
-window = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660))
+window = sg.Window('PyDataMath-II', layout=layout, background_color="#272533", size=(580, 660), return_keyboard_events=True)
 
 ''' calculator functions '''
 var = {'front':[], 'back':[], 'decimal':False, 'x_val':0.0, 'y_val':0.0, 'result':0.0, 'operator':''}
