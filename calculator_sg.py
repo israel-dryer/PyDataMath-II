@@ -31,9 +31,7 @@ window: object = sg.Window('PyDataMath-II', layout=layout, background_color="#27
 
 
 ##----CALCULATOR FUNCTIONS-------------------------------##
-
 var: dict = {'front':[], 'back':[], 'decimal':False, 'x_val':0.0, 'y_val':0.0, 'result':0.0, 'operator':''}
-
 
 #-----HELPER FUNCTIONS
 def format_number() -> float:
