@@ -7,6 +7,7 @@ I'm using a [Digital-7 font](https://www.1001fonts.com/digital+clock-fonts.html)
 Requirements: PySimpleGUI `pip install pysimplegui` or `conda install pysimplegui`  
 - Watch the [YouTube tutorial](https://youtu.be/x5LSTDdffFk)  
 - Get the [code](calculator_sg.py)  
+- See a live demo on [Trinket](https://israel-dryer.trinket.io/sites/py-datamath-ii)
 
 ![](sg_example.PNG)
 
