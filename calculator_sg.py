@@ -36,7 +36,7 @@ var: dict = {'front':[], 'back':[], 'decimal':False, 'x_val':0.0, 'y_val':0.0, '
 #-----HELPER FUNCTIONS
 def format_number() -> float:
     ''' Create a consolidated string of numbers from front and back lists '''
-    return float(''.join(var['front']) + '.' + ''.join(var['back']))
+    return float(''.join(var['front']).replace(',','') + '.' + ''.join(var['back']))
 
 
 def update_display(display_value: str):
@@ -80,7 +80,10 @@ def operator_click(event: str):
 def calculate_click():
     ''' Equals button click event '''
     global var
-    var['y_val'] = format_number()
+    try:
+        var['y_val'] = format_number()
+    except ValueError: # When Equals is pressed without any input
+        var['x_val'] = var['result']
     try:
         var['result'] = eval(str(var['x_val']) + var['operator'] + str(var['y_val']))
         update_display(var['result'])
